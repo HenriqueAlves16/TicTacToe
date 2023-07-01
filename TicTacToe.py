@@ -97,7 +97,7 @@ def minimax(position, depth, maximizing_player):
                 max_eval = eval
                 best_move = possible_moves[i]
                 
-        if depth == 5:  
+        if depth == 9:  
             return best_move
         else:
             return max_eval
@@ -129,7 +129,7 @@ while(1):
         break
     
     #makes the computer perfect move
-    best_move = minimax(grid, 5 , 1)
+    best_move = minimax(grid, 9 , 1)
     grid = best_move
     
     #if the game is over, it breaks the loop
